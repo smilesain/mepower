@@ -1,0 +1,55 @@
+<div class="bannershippings-container">
+  {% for block in section.blocks %}
+  <div class="bannershippings-item">
+    {% if block.settings.image %}
+    <div class="bannershippings-itemimg"><img  src="{{ block.settings.image |img_url: 'master' }}" alt=""/></div>
+    {% else %}
+    <div class="bannershippings-itemimg"><img  src="{{ block.settings.image_svglink  }}" alt=""/></div>
+    {% endif %}
+
+    {% if block.settings.title %}
+    <div class="bannershippings-itemtitle">{{ block.settings.title }}</div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "name": "Info Bar",
+    "class": "BannerShippingBar",
+    "max_blocks":4,
+    "settings": [
+
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image Png"
+          },{
+            "type": "text",
+            "id": "image_svglink",
+            "label": "Image svglink"
+          },{
+            "type": "text",
+            "id": "title",
+            "label": "title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Info Bar",
+        "category": "Advance"
+ 
+      }
+    ]
+  }
+{% endschema %}
+

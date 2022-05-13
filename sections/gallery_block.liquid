@@ -1,0 +1,248 @@
+<div class="image_over_texti" >
+  <div class="left_half_box" style="background :{{ section.settings.left_backgroundcolor }}" >
+    {% if section.settings.left_imageurl %}
+    <a href="{{ section.settings.left_imageurl }}">
+      {% endif %}
+      {% if section.settings.left_block_style == 'text_with_image' %}
+      {% if section.settings.left_image %}
+      {% assign img_url_li = section.settings.left_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+      <img class="lazyload fade-in lazypreload"
+           src="{{ section.settings.left_image | img_url: '1x' }}"
+           data-src="{{ img_url_li }}"
+           data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+           data-aspectratio="{{ block.settings.left_image.aspect_ratio }}"
+           data-sizes="auto"
+           data-parent-fit="cover"
+           alt="{{ block.settings.left_image.alt | escape }}">
+      {% endif %}
+      
+      {% if section.settings.left_image_mobile %}
+      {% assign img_url_lim = section.settings.left_image_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+      <img class="medium--up-hide lazyload fade-in lazypreload"
+           src="{{ block.settings.left_image_mobile | img_url: '1x' }}"
+           data-src="{{ img_url_lim }}"
+           data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+           data-aspectratio="{{ block.settings.left_image_mobile.aspect_ratio }}"
+           data-sizes="auto"
+           data-parent-fit="cover"
+           alt="{{ block.settings.left_image_mobile.alt | escape }}">
+      {% endif %}
+      {% else %}
+       <img class="medium--up-hide lazyload fade-in lazypreload"
+           src="{{ section.settings.left_image | img_url: '1x' }}"
+           data-src="{{ img_url_li }}"
+           data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+           data-aspectratio="{{ block.settings.left_image.aspect_ratio }}"
+           data-sizes="auto"
+           data-parent-fit="cover"
+           alt="{{ block.settings.left_image.alt | escape }}">
+      {% endif %}
+      
+      <div class="des_title">
+        {% if section.settings.left_title %}
+        <div class="left_titless" style="color :{{ section.settings.left_titlecolor }}">
+          {{ section.settings.left_title }}
+        </div>
+        <div class="line-black" style="background :{{ section.settings.left_titlecolor }}"></div>
+        {% endif %}
+        {% if section.settings.left__sub_title %}
+        <div class="left_subtitless"  style="color :{{ section.settings.left_titlecolor }}">
+          {{ section.settings.left__sub_title }}
+        </div>
+        {% endif %}
+      </div>
+      {% if section.settings.left_imageurl %}
+    </a>
+    {% endif %}
+  </div>
+  
+  <div class="right_two_box">
+    <div class="beans_box">
+      {% if section.settings.right_top_imageurl %}
+      <a href="{{ section.settings.right_top_imageurl }}">
+        {% endif %}
+        {% if section.settings.right_top_image %}
+        {% assign img_url_rt = section.settings.right_top_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+        <img class=" lazyload fade-in lazypreload"
+             src="{{ section.settings.right_top_image | img_url: '1x' }}"
+             data-src="{{ img_url_rt }}"
+             data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+             data-aspectratio="{{ block.settings.right_top_image.aspect_ratio }}"
+             data-sizes="auto"
+             data-parent-fit="cover"
+             alt="{{ block.settings.right_top_image.alt | escape }}">
+        {% endif %}
+        {% if section.settings.right_top_title %}
+        <div class="right_toptitless"  style="color :{{ section.settings.right_top_titlecolor }}">
+          <div>{{ section.settings.right_top_title }}</div>
+          <div class="line-black" style="background :{{ section.settings.right_top_titlecolor }}"></div>
+        </div>
+        {% endif %}
+        {% if section.settings.right_top_imageurl %}
+      </a>
+      {% endif %}
+    </div>
+    <div class="evaluation_box">
+      {% if section.settings.right_bottom_imageurl %}
+      <a href="{{ section.settings.right_bottom_imageurl }}">
+        {% endif %}
+        {% if section.settings.right_bottom_image %}
+        {% assign img_url_rb = section.settings.right_bottom_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+        <img class=" lazyload fade-in lazypreload"
+             src="{{ section.settings.right_bottom_image | img_url: '1x' }}"
+             data-src="{{ img_url_rb }}"
+             data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+             data-aspectratio="{{ block.settings.right_bottom_image.aspect_ratio }}"
+             data-sizes="auto"
+             data-parent-fit="cover"
+             alt="{{ block.settings.right_bottom_image.alt | escape }}">
+        {% endif %}
+
+        {% if section.settings.right_bottom_title %}
+        <div class="right_bottitless"  style="color :{{ section.settings.right_bottom_titlecolor }}">
+          <div> {{ section.settings.right_bottom_title }}</div>
+          <div class="line-black"  style="background :{{ section.settings.right_bottom_titlecolor }}"></div>
+        </div>
+        {% endif %}
+        {% if section.settings.right_bottom_imageurl %}
+      </a>
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
+<script>
+  /*if($(window).width() > 1000){
+    if($(window).scrollTop() +$(window).height()/2 > $(".left_half_box").offset().top ){
+      $(".left_half_box").animate({left:"0"},800);
+    }
+
+    if($(window).scrollTop() +$(window).height()/2 > $(".right_two_box").offset().top ){
+      $(".right_two_box").animate({right:"0"},800);
+      $(".beans_box").animate({bottom:"0"},800);
+      $(".evaluation_box").animate({top:"0"},800);
+      $(".right_toptitless,.right_bottitless").stop(200).animate({top:"10%",opacity: "1"},{ duration: 400, easing: "linear" });
+      $(".des_title").stop(200).animate({top:"10%",opacity: "1"},{ duration: 400, easing: "linear" }); 
+    }else{
+      $(".right_toptitless,.right_bottitless").animate({top:"20%",opacity: "0"},{ duration: 400, easing: "linear" });
+      $(".des_title").animate({top:"50%",opacity: "0"},{ duration: 400, easing: "linear" }); 
+    }*/
+</script>
+
+
+{% schema %}
+  {
+    "name": "Gallery Block",
+    "class": "gallery-section",
+    "settings": [
+      {
+      "type": "select",
+      "id": "left_block_style",
+      "label":"left block style",
+      "default": "text_with_image",
+      "options": [
+      {
+      "label": "text_with_image",
+      "value": "text_with_image"
+      },
+      {
+      "label": "text_with_backgroundge",
+      "value": "text_with_backgroundge"
+      }
+      ]
+      },{
+      "type": "color",
+      "id": "left_backgroundcolor",
+      "label": "Left Backgroundcolor"
+      },{
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "left block image(960*800px)"
+      },{
+      "type": "url",
+      "id": "left_imageurl",
+      "label": "left block image link"
+      },
+      {
+      "type": "text",
+      "id": "left_title",
+      "label": "left block title",
+      "default":"New Event"
+      },{
+      "type": "text",
+      "id": "left__sub_title",
+      "label": "left sub title",
+      "default":"is the largest of the toothed whales and"
+      },{
+      "type": "color",
+      "id": "left_titlecolor",
+      "label": "left Text Color"
+      },{
+      "type": "image_picker",
+      "id": "right_top_image",
+      "label": "right_top_image(960*400px)"
+      },{
+      "type": "url",
+      "id": "right_top_imageurl",
+      "label": "right_top block image link"
+      },{
+      "type": "text",
+      "id": "right_top_title",
+      "label": "right_top block title",
+      "default":"Studeng Beans"
+      },{
+      "type": "color",
+      "id": "right_top_titlecolor",
+      "label": "Right_top Text Color"
+      },{
+      "type": "image_picker",
+      "id": "right_bottom_image",
+      "label": "right_bottom_image(960*400px)"
+      },{
+      "type": "url",
+      "id": "right_bottom_imageurl",
+      "label": "right_bottom block image link"
+      },{
+      "type": "text",
+      "id": "right_bottom_title",
+      "label": "right_bottom block title",
+      "default":"The sample evaluation"
+      },{
+      "type": "color",
+      "id": "right_bottom_titlecolor",
+      "label": "Right_bottom Text Color"
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Gallery Block",
+        "category": {
+          "cs": "Obrázek",
+          "da": "Billede",
+          "de": "Foto",
+          "en": "Image",
+          "es": "Imagen",
+          "fi": "Kuva",
+          "fr": "Image",
+          "it": "Immagine",
+          "ja": "画像",
+          "ko": "이미지",
+          "nb": "Bilde",
+          "nl": "Afbeelding",
+          "pl": "Obraz",
+          "pt-BR": "Imagem",
+          "pt-PT": "Imagem",
+          "sv": "Bild",
+          "th": "รูปภาพ",
+          "tr": "Görsel",
+          "vi": "Hình ảnh",
+          "zh-CN": "图片",
+          "zh-TW": "圖片"
+        }
+      }
+    ]
+  }
+{% endschema %}
+

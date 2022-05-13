@@ -1,0 +1,61 @@
+<div class="product-gallery-wrapper">
+  {% for block in section.blocks %}
+  <div class="product-gallery-item">
+    {% if block.settings.image %}
+    <img class="hide-mb" src="{{ block.settings.image |img_url: 'master' }}" alt=""/>
+    {% endif %}
+
+    {% if block.settings.image_mb %}
+    <img class="hide-pc" src="{{ block.settings.image_mb |img_url: 'master' }}" alt=""/>
+    {% else %}
+    <img class="hide-pc" src="{{ block.settings.image |img_url: 'master' }}" alt=""/>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<style>
+  .product-gallery-wrapper{ display: flex; flex-wrap: wrap;}
+  .product-gallery-item{width: 25%;}
+  .product-gallery-item img{ width: 100%;}
+  @media(max-width: 768px){
+    .product-gallery-item{width: 50%;}
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Product Gallery Image",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image PC",
+            "info": "Size: 480px*408px"
+          },{
+            "type": "image_picker",
+            "id": "image_mb",
+            "label": "Image Mobile"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Gallery Image",
+        "category": "image"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,53 @@
+<div class="section-product-what-include">
+  <div class="title">{{section.settings.title}}</div>
+  <div class="content">
+    {% for block in section.blocks %}
+    <div class="item">
+      <img class="image" src="{{block.settings.image | img_url: 'master'}}">
+      <div class="text">{{block.settings.name}}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "What include",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default": "What's Include"
+      }
+	],
+    "blocks":[
+      {
+        "type": "what-include",
+        "name": "What include",
+        "settings":[
+          {
+            "type": "image_picker",
+            "label": "Image",
+            "id": "image"
+          },{
+            "type": "text",
+            "label": "Product name",
+            "id": "name"
+          }
+        ]
+      }
+    ],   
+    "presets": [
+      {
+        "name": "Product What include",
+        "category": "image with text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

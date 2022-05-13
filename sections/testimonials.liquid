@@ -1,0 +1,176 @@
+{%- style -%}
+  .testimonials-section {
+    color: {{ section.settings.color_text }};
+  }
+}
+{%- endstyle -%}
+
+<div
+  class="text-center testimonials-section testimonials-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="testimonials"
+  data-aos>
+  {%- if section.settings.title != blank -%}
+    <div class="page-width">
+      <div class="section-header">
+        <h2>{{ section.settings.title | escape }}</h2>
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+  <div id="testimonials-wrapper">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {%- for block in section.blocks -%}
+        <div class="swiper-slide">
+
+            {%- if block.settings.image != blank or block.settings.author != blank -%}
+            <div class="testimonial-meta">
+              {%- if block.settings.image != blank -%}
+              <img class="lazyload"  data-src="{{ block.settings.image |img_url: 'master' }}" alt="{{ block.settings.image.alt }}"/>
+              {%- endif -%}
+
+              {%- if block.settings.testimonial != blank -%}
+              <div class="rte-setting text-spacing">
+                <span class="icon-quote icon-quote-before">{%- render 'svg_html',svg_icon: 'icon-quote-before' -%}</span>
+                {{ block.settings.testimonial }}
+                <span class="icon-quote icon-quote-after">{%- render 'svg_html',svg_icon: 'icon-quote-after' -%}</span>
+              </div>
+              {%- endif -%}
+
+              {%- if block.settings.author != blank -%}
+              <div>{{ block.settings.author | escape }}</div>
+              {%- endif -%}
+            </div>
+            {%- endif -%}
+
+        </div>
+        {%- endfor -%}
+      </div>
+      <div class="swiper-pagination"></div>
+
+    </div>
+    </div>
+  {%- endif -%}
+</div>
+
+<style>
+  .no-margin-testimonials{margin-top:{{section.settings.margin_top | append:'px'}} !important; }
+  .testimonials-section .testimonial-meta{ max-width:48.75vw;margin:0 auto; padding: 80px 0; min-height: 350px;}
+  .testimonials-section .rte-setting{ position: relative;padding: 0 5vw;}
+  .testimonials-section .icon-quote{position: absolute;top: 20px;}
+  .testimonials-section .icon-quote svg{width:1.823vw}
+  .testimonials-section .icon-quote-before{ left: 0;} 
+  .testimonials-section .icon-quote-after{ right: 0; }
+  .testimonials-section .swiper-pagination{ bottom: 50px;}
+  .testimonials-section .swiper-pagination-bullet{background: #fff;opacity: 1;width: 12px; height: 12px;}
+  .testimonials-section .swiper-pagination-bullet-active{background: transparent;border: 2px solid #FFFFFF;}
+  .testimonials-section .swiper-slide:nth-child(odd){ background:#000; }
+  .testimonials-section .swiper-slide:nth-child(even){ background:#de5322; }
+  @media(max-width: 768px){
+    .testimonials-section .testimonial-meta{ max-width: 90%;  padding: 80px 0 100px;}
+    .testimonials-section .rte-setting{padding: 0 5vw 20px;}
+    .testimonials-section .icon-quote svg{ width: 6vw;}
+    .testimonials-section .icon-quote-before{ top: -40px;}
+    .testimonials-section .icon-quote-after{ top: unset;bottom:-10px;}
+    .testimonials-section .swiper-pagination { bottom: 20px;}
+  }
+</style>
+
+<script> 
+  var proSwiper = new Swiper('#testimonials-wrapper .swiper-container',{
+    slidesPerView : 1,
+    effect : 'fade',
+    watchSlidesVisibility: true,
+    autoplay: {
+      delay: 6000,
+    },
+    loop: true,
+    watchOverflow: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  })
+  
+    $(function(){
+    var maxheight = 0;
+    $(".testimonial-meta").each(function(){
+      if(maxheight < $(this).height()) 
+        maxheight = $(this).height();
+    });
+    $(".testimonial-meta").css({"height": maxheight + "px"});
+  });
+  
+</script>
+
+{% schema %}
+  {
+    "name": "Testimonials",
+    "class": "no-margin-testimonials",
+    "max_blocks": 10,
+    "settings": [
+  	  {
+        "type":"range",
+        "id":"margin_top",
+        "min":0,
+        "max":60,
+        "step":5,
+        "unit":"px",
+        "label":"margin top space",
+        "default":0
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Professional solutions, by professional users."
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#1c1d1d"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "testimonials",
+        "name": "Testimonials",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Logo Icon"
+          },
+          {
+            "type": "richtext",
+            "id": "testimonial",
+            "label": "Text",
+            "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+          },
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author",
+            "default": "Author name"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Testimonials",
+        "blocks": [
+          {
+            "type": "testimonials"
+          },
+          {
+            "type": "testimonials"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

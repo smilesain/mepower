@@ -1,0 +1,131 @@
+<div class="bg-text-link" style="background:{{ section.settings.bg_color }};">
+  {% if section.settings.image %}
+  <img class="hide-mb" src="{{ section.settings.image |img_url: 'master' }}" alt=""/>
+  {% endif %}
+  
+  {% if section.settings.image_mb %}
+  <img class="hide-pc" src="{{ section.settings.image_mb |img_url: 'master' }}" alt=""/>
+  {% else %}
+   <img class="hide-pc" src="{{ section.settings.image |img_url: 'master' }}" alt=""/>
+  {% endif %}
+
+  <div class="bg-text-wrapper bg-text-icon-wrapper" style="position: absolute; top:50%;transform: translateY(-50%);
+      left: {{ section.settings.content_x_position | append: '%' }};
+      width:{{section.settings.text_block_width}};
+      flex-basis:{{section.settings.text_block_width}}; ">
+    {% if section.settings.title != blank %}
+    <h2 style="color:{{ section.settings.text_color }};">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    {% if section.settings.content != blank %}
+    <p style="color:{{ section.settings.text_color }};">{{ section.settings.content }}</p>
+    {% endif %}
+    
+    <ul>
+      {% for block in section.blocks %}
+      <li style="color:{{ section.settings.text_color }};">
+        {% if block.settings.image %}
+        <img style="max-width:40px;" src="{{ block.settings.image |img_url: 'master' }}" alt=""/>
+        {% else %}
+        <img style="max-width:40px;" src="{{ block.settings.image_svglink  }}" alt=""/>
+        {% endif %}
+
+        {% if block.settings.text %}
+        <span>{{ block.settings.text }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Text/Icon Left",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background Image PC",
+        "info": "Size: 1920px*700px"
+      },{
+        "type": "image_picker",
+        "id": "image_mb",
+        "label": "Background Image Mobile",
+        "info": "Size: 750px*550px"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "content",
+        "label": "Content"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Section Background Color",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#fff"
+      },
+      {
+        "type":"text",
+        "label":"Text Box width",
+        "id":"text_block_width",
+        "default":"50%"
+      },
+      {
+        "type": "range",
+        "id": "content_x_position",
+        "min": 0,
+        "max": 80,
+        "step": 1,
+        "unit": "%",
+        "label": "Content horizontal position",
+        "default": 20
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Icon Png"
+          },{
+            "type": "text",
+            "id": "image_svglink",
+            "label": "Icon svglink"
+          },{
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Text/Icon Left",
+        "category": "text"
+ 
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

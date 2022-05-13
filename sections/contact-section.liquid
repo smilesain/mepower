@@ -1,0 +1,191 @@
+<div class="contact-header">
+  {% if section.settings.image %}
+  <img class="lazyload hide-mb" src="{{ section.settings.image | img_url:'master' }}"/>
+  {% endif %}
+  {% if section.settings.image_mb %}
+  <img class="lazyload hide-pc" src="{{ section.settings.image_mb | img_url:'master' }}"/>
+  {% else %}
+  <img class="lazyload hide-pc" src="{{ section.settings.image | img_url:'master' }}"/>
+  {% endif %}
+  <div class="text-wrapper">
+    <h1>{{ page.title }}</h1>
+    {{ section.settings.header-text }}
+  </div>
+</div>
+
+<div class="wrapper">
+  {{ page.content }}
+  <div class="grid contact-content-left-grid">
+    <div class="contact-left grid__item large--one-half">
+      <ul>
+        {% if section.settings.website_name != blank %}
+        <li>
+          <span> {%- render 'svg_html',svg_icon: 'icon-website' -%} </span>
+          <strong>{{ section.settings.website_title }}</strong>
+          {{ section.settings.website_name }}
+        </li>
+        {% endif %}
+        
+        {% if section.settings.contact_email != blank %}
+        <li>
+          <span> {%- render 'svg_html',svg_icon: 'icon-question' -%} </span>
+          <strong>{{ section.settings.email_title }}</strong>
+          {{ section.settings.contact_email }}
+        </li>
+        {% endif %}
+                
+        {% if section.settings.contact_email2 != blank %}
+        <li>
+          <span> {%- render 'svg_html',svg_icon: 'icon-email' -%} </span>
+          <strong>{{ section.settings.email_title2 }}</strong>
+          {{ section.settings.contact_email2 }}
+        </li>
+        {% endif %}
+        
+        {% if section.settings.contact_phone != blank %}
+        <li>
+          <span> {%- render 'svg_html',svg_icon: 'icon-phone' -%} </span>
+          <strong>{{ section.settings.phone_title }}</strong>
+          {{ section.settings.contact_phone }}
+        </li>
+        {% endif %}
+
+        {% if section.settings.media_name != blank %}
+        <li>
+          <span> {%- render 'svg_html',svg_icon: 'icon-contact-social' -%} </span>
+          <strong>{{ section.settings.media }}</strong>
+          {{ section.settings.media_name }}
+        </li>
+        {% endif %}
+        
+        {% if section.settings.address != blank %}
+        <li>
+          <span> {%- render 'svg_html',svg_icon: 'icon-address' -%} </span>
+          <strong>{{ section.settings.address }}</strong>
+          {{ section.settings.address_name }}
+        </li>
+        {% endif %}
+                 
+      </ul>
+    </div>
+
+    <div class="contact-right grid__item large--one-half">
+      {% include 'contact-form' %}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Contact section",
+    "settings": [
+        {
+          "type":"header",
+          "content":"Contact Top banner"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image In PC",
+          "info":"image size:1920*400px"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mb",
+          "label": "Image In Mobile",
+          "info":"image size:750*550px"
+        },
+        {
+          "type":"richtext",
+          "id":"header-text",
+          "label":"Header Text"
+        },
+        {
+          "type":"header",
+          "content":"Contact Left part"
+        },
+        {
+          "type":"text",
+          "id":"website_title",
+          "label":"Website Title",
+          "default":"Official Website:"
+        },
+        {
+          "type":"text",
+          "id":"website_name",
+          "label":"Website Name",
+          "default":"www.mepowerus.com"
+        },
+        {
+          "type":"text",
+          "id":"email_title",
+          "label":"Email title",
+          "default":"Business Inquiry:"
+        },
+        {
+          "type": "text",
+          "id": "contact_email",
+          "label": "Email",
+          "default":"brand@mepowerus.com"
+        },
+        {
+          "type":"text",
+          "id":"email_title2",
+          "label":"Email title2",
+          "default":"Order Question:"
+        },
+        {
+          "type": "text",
+          "id": "contact_email2",
+          "label": "Email2",
+          "default":"support@mepowerus.com"
+        },
+        {
+          "type":"text",
+          "id":"email_title3",
+          "label":"Email title3"
+         },
+        {
+          "type": "text",
+          "id": "contact_email3",
+          "label": "Email3"
+        },
+        {
+          "type": "text",
+          "id": "phone_title",
+          "label": "Phone Ttile",
+          "default":"Free Call:"
+        },
+        {
+          "type": "text",
+          "id": "contact_phone",
+          "label": "Phone number",
+          "default":"+1 (866) 777 0087"
+        },
+        {
+          "type":"text",
+          "id":"media",
+          "label":"Social Media Title",
+          "default":"Social Media:"
+        },
+        {
+          "type": "text",
+          "id": "media_name",
+          "label": "Social Media Name",
+          "default":"@mepowerus"
+        },
+        {
+          "type":"text",
+          "id":"address",
+          "label":"Address Title",
+          "default":"Address:"
+        },
+        {
+          "type": "text",
+          "id": "address_name",
+          "label": "Address Name"
+        }
+     ]
+  }
+{% endschema %}

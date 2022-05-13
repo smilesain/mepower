@@ -1,0 +1,83 @@
+<div class="bannershippings-container">
+  {% for block in section.blocks %}
+  <div class="bannershippings-item">
+    {% if block.settings.image %}
+    <div class="bannershippings-itemimg"><img  src="{{ block.settings.image |img_url: 'master' }}" alt=""/></div>
+    {% else %}
+    <div class="bannershippings-itemimg"><img  src="{{ block.settings.image_svglink  }}" alt=""/></div>
+    {% endif %}
+
+    {% if block.settings.title %}
+    <div class="bannershippings-itemtitle">{{ block.settings.title }}</div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<style>
+  .product_featured_bar{ 
+    background:{{ section.settings.bg_color }};
+    padding:30px 0;
+    color:{{ section.settings.text_color }};
+    font-weight: bold;
+  }
+  @media(max-width: 768px){
+    .product_featured_bar { padding:36px 0 0;}
+    .product_featured_bar .bannershippings-container .bannershippings-itemtitle{
+      color:{{ section.settings.text_color }};
+      padding: 0 20px;
+      line-height: 1.4;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Product Featured bar",
+    "class": "product_featured_bar",
+    "max_blocks":4,
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Section Background Color",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#fff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image Png"
+          },{
+            "type": "text",
+            "id": "image_svglink",
+            "label": "Image svglink"
+          },{
+            "type": "text",
+            "id": "title",
+            "label": "title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Featured bar",
+        "category": "text"
+ 
+      }
+    ]
+  }
+{% endschema %}
+

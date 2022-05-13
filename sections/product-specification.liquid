@@ -1,0 +1,90 @@
+<h3 class="product-mb-title">Specs</h3>
+<div class="section-product-specification" id="specs">
+  <div class="title">{{section.settings.title}}</div>
+  {% if section.settings.image %}
+  <img class="image hide-in-mb" src="{{section.settings.image | img_url: 'master'}}">
+  {% else %}
+  <img class="image hide-in-mb" src="{{section.settings.image_svglink }}">
+  {% endif %}
+  
+  {% if section.settings.image_mb %}
+  <img class="image hide-in-pc small-image" src="{{section.settings.image_mb | img_url: 'master'}}">
+  {% else %}
+  <img class="image hide-in-pc small-image" src="{{section.settings.image_mb_svglink }}">
+  {% endif %}
+
+  <div class="container-product-specification-wrapper" style="display: none;">
+    <div class="bg"></div>
+    <div class="swiper-container swiper-container-product-specification hide-in-pc" >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-zoom-container">
+            {% if section.settings.image_mb %}
+            <img class="image hide-in-pc " src="{{section.settings.image_mb | img_url: 'master'}}">
+            {% else %}
+            <img class="image hide-in-pc " src="{{section.settings.image_mb_svglink }}">
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="close">{%- render 'svg_html',svg_icon: 'icon-close' -%}</div>
+  </div>
+</div>
+<script>
+  if($(window).width() < 769){
+    var swiper_product_specification = new Swiper(".swiper-container-product-specification",{
+      zoom : true, 
+    });
+  }
+  
+  $(".section-product-specification .small-image").click(function(){
+    $(".container-product-specification-wrapper").css("display","flex");
+//     swiper_product_specification.zoom.in(); 
+  });
+  $(".section-product-specification .close").click(function(){
+    $(".container-product-specification-wrapper").css("display","none");
+//     swiper_product_specification.zoom.out();
+  });
+</script>
+{% schema %}
+  {
+    "name": "Product specification",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default": "Specification"
+      },{
+        "type": "image_picker",
+        "label": "Specification image",
+        "id": "image"
+      },{
+        "type": "text",
+        "id": "image_svglink",
+        "label": "Image svglink"
+      },{
+        "type": "image_picker",
+        "label": "Specification image mobile",
+        "id": "image_mb"
+      },{
+        "type": "text",
+        "id": "image_mb_svglink",
+        "label": "Image svglink"
+      }
+	],
+    "presets": [
+      {
+        "name": "Product specification",
+        "category": "image with text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

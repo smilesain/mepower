@@ -1,0 +1,110 @@
+<div class="wrapper">
+  <div class="user-manual-divider">
+    {% for block in section.blocks %}
+    {% if block.settings.featured_product != blank %}
+    <h4 class="type-title">{{section.settings.title}}</h4>
+    {% break %}
+    {% endif %}
+    {% endfor %}
+
+    <div class="grid grid--uniform grid--view-items">
+      {% include 'download-products' %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "User Manual",
+    "class":"user-manual-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [ 
+          {
+           "type": "image_picker",
+           "id": "featured_product",
+           "label": "Featured Product Image",
+           "info": "Size:300px*300px"
+          },
+          {
+            "type": "text",
+            "id": "product-title",
+            "label": "Product Title"
+          },
+          {
+           "type": "header",
+           "content": "Manual"
+          },
+          {
+            "type": "text",
+            "id": "manual-download01",
+            "label": "Manual Link Title01",
+            "default": "Manual Title01"
+          },
+          {
+            "type": "text",
+            "id": "manual_link01",
+            "label": "Manual Download Link01"
+          },
+          {
+            "type": "text",
+            "id": "manual-download02",
+            "label": "Manual Link Title02",
+            "default": "Manual Title02"
+          },
+          {
+            "type": "text",
+            "id": "manual_link02",
+            "label": "Manual Download Link02"
+          },
+          {
+            "type": "text",
+            "id": "manual-download03",
+            "label": "Manual Link Title03",
+            "default": "Manual Title03"
+          },
+          {
+            "type": "text",
+            "id": "manual_link03",
+            "label": "Manual Download Link03"
+          },
+         {
+            "type": "text",
+            "id": "manual-download04",
+            "label": "Manual Link Title04",
+            "default": "Manual Title04"
+          },
+          {
+            "type": "text",
+            "id": "manual_link04",
+            "label": "Manual Download Link04"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "User Manual",
+        "category": "Text",
+        "blocks": [
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

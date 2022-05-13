@@ -1,0 +1,105 @@
+{
+  "sections": {
+    "1635842095bb94d05c": {
+      "type": "banner-title",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/user-manual-banner.png",
+        "image_mb": "shopify:\/\/shop_images\/user-manual-banner-mb.png"
+      }
+    },
+    "user_manual_search": {
+      "type": "user_manual_search",
+      "settings": {}
+    },
+    "16358367024b3c66ea": {
+      "type": "user_manual",
+      "blocks": {
+        "16358367024b3c66ea-0": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "shopify:\/\/shop_images\/mepower-pc_3.png",
+            "product-title": "Meball",
+            "manual-download01": "Meball User Manuals",
+            "manual_link01": "#",
+            "manual-download02": "Meball User Manuals02",
+            "manual_link02": "#",
+            "manual-download03": "Manual Title03",
+            "manual_link03": "",
+            "manual-download04": "Manual Title04",
+            "manual_link04": ""
+          }
+        },
+        "16358367024b3c66ea-1": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "shopify:\/\/shop_images\/mepower-pc_2.png",
+            "product-title": "Merollor",
+            "manual-download01": "Merollor User Manuals",
+            "manual_link01": "#",
+            "manual-download02": "Merollor User Manuals02",
+            "manual_link02": "#",
+            "manual-download03": "Manual Title03",
+            "manual_link03": "",
+            "manual-download04": "Manual Title04",
+            "manual_link04": ""
+          }
+        }
+      },
+      "block_order": [
+        "16358367024b3c66ea-0",
+        "16358367024b3c66ea-1"
+      ],
+      "settings": {
+        "title": "Meball"
+      }
+    },
+    "16358386526cfb3da2": {
+      "type": "user_manual",
+      "blocks": {
+        "16358386526cfb3da2-0": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "shopify:\/\/shop_images\/Rectangle_64_b1827735-8cf9-4a30-9c2c-cb271656bbbc.png",
+            "product-title": "Test",
+            "manual-download01": "Manual Title01",
+            "manual_link01": "#",
+            "manual-download02": "Manual Title02",
+            "manual_link02": "",
+            "manual-download03": "Manual Title03",
+            "manual_link03": "",
+            "manual-download04": "Manual Title04",
+            "manual_link04": ""
+          }
+        },
+        "16358386526cfb3da2-1": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "shopify:\/\/shop_images\/Rectangle_63_9a0a13a3-16dd-41c3-91f8-0241d306c8cd.png",
+            "product-title": "Merollor 2",
+            "manual-download01": "Manual Title01",
+            "manual_link01": "#",
+            "manual-download02": "Manual Title02",
+            "manual_link02": "#",
+            "manual-download03": "Manual Title03",
+            "manual_link03": "#",
+            "manual-download04": "Manual Title04",
+            "manual_link04": ""
+          }
+        }
+      },
+      "block_order": [
+        "16358386526cfb3da2-0",
+        "16358386526cfb3da2-1"
+      ],
+      "settings": {
+        "title": "Collection02"
+      }
+    }
+  },
+  "order": [
+    "1635842095bb94d05c",
+    "user_manual_search",
+    "16358367024b3c66ea",
+    "16358386526cfb3da2"
+  ]
+}

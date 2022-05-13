@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "product-template": {
+      "type": "product-template",
+      "settings": {
+        "product_vendor_enable": false,
+        "social_sharing_products": true,
+        "quantity_enabled": true,
+        "product_selector": "radio",
+        "enable_payment_button": true,
+        "add_to_cart_button_size": "small",
+        "media_layout": "thumbnails",
+        "enable_image_zoom": false,
+        "enable_video_looping": true
+      }
+    },
+    "ryviu-widget": {
+      "type": "ryviu-widget",
+      "settings": {}
+    }
+  },
+  "order": [
+    "product-template",
+    "ryviu-widget"
+  ]
+}

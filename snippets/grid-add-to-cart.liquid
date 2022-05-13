@@ -1,0 +1,55 @@
+
+
+            {% capture "form_classes" %}
+              product-single__form{% if product.has_only_default_variant %} product-single__form--no-variants{% endif %}
+            {%- endcapture %}
+
+            {% capture "form_id" %}AddToCartForm--{{ section.id }}{%- endcapture %}
+            {% assign current_variant = product.selected_or_first_available_variant %}
+            {% form 'product', product, class:form_classes, id:form_id, data-product-form: '' %}
+              {{ form | payment_terms }}
+              {% unless product.has_only_default_variant %}
+                {% for option in product.options_with_values %}
+                  <div class="radio-wrapper js product-form__item">
+                    <label class="single-option-radio__label"
+                      for="ProductSelect-option-{{ forloop.index0 }}">
+                      {{ option.name | escape }}
+                    </label>
+                      <select class="single-option-selector__radio single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                        {% for value in option.values %}
+                          <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value | escape }}</option>
+                        {% endfor %}
+                      </select>           
+                  </div>
+                {% endfor %}
+              {% endunless %}
+
+              <select name="id" id="ProductSelect--{{ section.id }}" class="product-single__variants no-js">
+                {% for variant in product.variants %}
+                  {% if variant.available %}
+                    <option {% if variant == product.selected_or_first_available_variant %}
+                      selected="selected" {% endif %}
+                      data-sku="{{ variant.sku }}"
+                      value="{{ variant.id }}">
+                      {{ variant.title }} - {{ variant.price | money_with_currency }}
+                    </option>
+                  {% else %}
+                    <option disabled="disabled">
+                      {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                    </option>
+                  {% endif %}
+                {% endfor %}
+              </select>
+
+              <div class="product-single__add-to-cart">
+                <button type="submit" name="add" id="AddToCart--{{ section.id }}" class="btn btn--add-to-car"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
+                  <span class="btn__text">
+                    {% if current_variant.available %}
+                      {{ 'products.product.add_to_cart' | t }}
+                    {% else %}
+                      {{ 'products.product.sold_out' | t }}
+                    {% endif %}
+                  </span>
+                </button>
+              </div>
+            {% endform %}

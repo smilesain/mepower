@@ -1,0 +1,842 @@
+{
+  "current": {
+    "color_borders": "#de5322",
+    "color_primary": "#de5322",
+    "color_secondary": "#de5322",
+    "color_sale_tag": "#de5322",
+    "color_drawer_background": "#f4f4f4",
+    "color_drawer_text": "#000000",
+    "color_drawer_button": "#de5322",
+    "type_header_family": "avenir_next_n4",
+    "type_accent_family": "avenir_next_n4",
+    "type_accent_transform": false,
+    "type_accent_spacing": true,
+    "type_accent_subheadings": false,
+    "type_base_family": "avenir_next_n4",
+    "cart_type": "drawer",
+    "social_facebook_link": "https:\/\/www.facebook.com\/mepowerus",
+    "social_twitter_link": "",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/mepowerus\/",
+    "social_instagram_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCHY4KPdym-XyJFi2snYbcjg",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/icon1014.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/checkout-logo.png",
+    "checkout_accent_color": "#de5322",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/logo_pc.svg?v=1632293580",
+          "logo_max_width": 185,
+          "header_color": "#000000",
+          "transparent_header_enable": false,
+          "transparent_header_color": "#ffffff",
+          "search": "modal",
+          "main_menu_link_list": "main-menu",
+          "drawer_bottom_link_list": "",
+          "drawer_search_enable": true,
+          "show_announcement": true,
+          "home_page_only": false,
+          "text": "<p>Free Shipping & One-Year Warrany. \/ $12 OFF Coupon Code <strong>NEWYEAR<\/strong>.<\/p>",
+          "link": "",
+          "color_bg": "#f4f4f4",
+          "color_text": "#000000"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "slideshow-0": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image_position": "center center",
+              "image_overlay": false,
+              "image_overlay_opacity": 25,
+              "show_infoblock": "yes",
+              "show_item_button": "yes",
+              "infoposition": "right",
+              "infoposition_v": "top",
+              "info_point": "8.8125vw",
+              "info_point_v": "50px",
+              "infoposition_mb": "right",
+              "infoposition_v_mb": "center",
+              "text_alignment": "left",
+              "info_point_mb": "1vw",
+              "info_point_v_mb": "50px",
+              "slide_subheading": "END OF SUMMER SALE<br> NOW ENJOY $70 OFF",
+              "slide_subheading_size": "2.1875vw",
+              "slide_subheading_size_mb": "4.6vw",
+              "slide_heading": "MUSCLEGUN CARBON",
+              "slide_heading_size": "1.25vw",
+              "slide_heading_size_mb": "4vw",
+              "slide_content": "",
+              "slide_content_size": "16px",
+              "slide_content_size_mb": "12px",
+              "content_max_width": 75,
+              "button_label": "Shop Now",
+              "button_link": "shopify:\/\/products\/meball",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#de5322",
+              "slide_button_label_color_mb": "#ffffff",
+              "slide_button_background_color_mb": "",
+              "btn_hover_bg_color": "#000000",
+              "color_text1": "#ffffff",
+              "color_text2": "#ffffff",
+              "color_text3": "#ffffff"
+            }
+          },
+          "c7e784bb-230c-474e-ad75-8e70ab89cb6e": {
+            "type": "slide",
+            "settings": {
+              "image_position": "center center",
+              "image_overlay": false,
+              "image_overlay_opacity": 25,
+              "show_infoblock": "yes",
+              "show_item_button": "yes",
+              "infoposition": "left",
+              "infoposition_v": "center",
+              "info_point": "7.8125vw",
+              "info_point_v": "80px",
+              "infoposition_mb": "right",
+              "infoposition_v_mb": "center",
+              "text_alignment": "center",
+              "info_point_mb": "2vw",
+              "info_point_v_mb": "0px",
+              "slide_subheading": "Meball Electric Massager",
+              "slide_subheading_size": "3.3vw",
+              "slide_subheading_size_mb": "6vw",
+              "slide_heading": "",
+              "slide_heading_size": "1.7vw",
+              "slide_heading_size_mb": "4vw",
+              "slide_content": "Power your life with the portable and easy way!",
+              "slide_content_size": "16px",
+              "slide_content_size_mb": "14px",
+              "content_max_width": 75,
+              "button_label": "More",
+              "button_link": "shopify:\/\/products\/meball",
+              "slide_text_color": "#de5322",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#de5322",
+              "slide_button_label_color_mb": "#ffffff",
+              "slide_button_background_color_mb": "#de5322",
+              "btn_hover_bg_color": "#de5322",
+              "color_text1": "#ffffff",
+              "color_text2": "#ffffff",
+              "color_text3": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "slideshow-0",
+          "c7e784bb-230c-474e-ad75-8e70ab89cb6e"
+        ],
+        "settings": {
+          "home_hero_height": "adapt",
+          "hero_home_auto": false,
+          "home_hero_auto_speed": 5
+        }
+      },
+      "featured-content": {
+        "type": "featured-content",
+        "settings": {
+          "home_page_full_width": false,
+          "section_title": "",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "large"
+        }
+      },
+      "featured-collections": {
+        "type": "featured-collections",
+        "blocks": {
+          "featured-collections-0": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "featured-collections-1": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "featured-collections-2": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "featured-collections-0",
+          "featured-collections-1",
+          "featured-collections-2"
+        ],
+        "settings": {
+          "title": "Collection list"
+        }
+      },
+      "featured-products": {
+        "type": "featured-products",
+        "settings": {
+          "title": "Featured collection",
+          "home_featured_products": "",
+          "collection_products_grid": "grid"
+        }
+      },
+      "featured-product": {
+        "type": "featured-product",
+        "settings": {
+          "featured_product": "",
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "enable_video_looping": false
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "disabled": true,
+        "settings": {
+          "heading": "Subscribe to our newsletter",
+          "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "background_color": "#333333",
+          "title_color": "#ffffff",
+          "text_color": "#c6c6c6",
+          "show_payment_icons": true,
+          "show_currency_selector": false,
+          "show_locale_selector": false,
+          "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/logo_mb.svg?v=1633689197",
+          "logo_max_width": 100,
+          "footer_link_list": "footer",
+          "footer_link_list02": "",
+          "newsletter_title": "Sign up and get the latest big deals!"
+        }
+      },
+      "16319284020bf80404": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Blog",
+          "blog": "news",
+          "post_limit": 9,
+          "blog_show_date": true,
+          "blog_show_author": false,
+          "blog_show_image": true,
+          "blog_show_excerpt": false,
+          "show_view_all": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "product_vendor_enable": false,
+          "social_sharing_products": true,
+          "quantity_enabled": false,
+          "product_selector": "radio",
+          "enable_payment_button": true,
+          "add_to_cart_button_size": "small",
+          "media_layout": "thumbnails",
+          "enable_image_zoom": false,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true
+        }
+      },
+      "1632304018190956d9": {
+        "type": "policy-info",
+        "blocks": {
+          "290df414-037c-448e-85b8-b594d254e583": {
+            "type": "image",
+            "settings": {
+              "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/Free_Shipping.svg?v=1632304145",
+              "title": "Free Shipping"
+            }
+          },
+          "beae78b8-6d94-4921-922b-8a1ceb0c80c8": {
+            "type": "image",
+            "settings": {
+              "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/30-Day_Money-Back_Guarantee.svg?v=1632304145",
+              "title": "30-Day Money-Back Guarantee"
+            }
+          },
+          "611f29cd-d077-4a5e-8424-e8a888ef52a7": {
+            "type": "image",
+            "settings": {
+              "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/Hassle-Free_Warranty.svg?v=1632304145",
+              "title": "Hassle-Free Warranty"
+            }
+          },
+          "9cbd303e-2eda-4e55-8b06-14c89646e456": {
+            "type": "image",
+            "settings": {
+              "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/headset.svg?v=1635152109",
+              "title": "Customer Service"
+            }
+          }
+        },
+        "block_order": [
+          "290df414-037c-448e-85b8-b594d254e583",
+          "beae78b8-6d94-4921-922b-8a1ceb0c80c8",
+          "611f29cd-d077-4a5e-8424-e8a888ef52a7",
+          "9cbd303e-2eda-4e55-8b06-14c89646e456"
+        ],
+        "settings": {}
+      },
+      "1632971132416c80ca": {
+        "type": "gallery_block",
+        "settings": {
+          "left_block_style": "text_with_image",
+          "left_backgroundcolor": "",
+          "left_imageurl": "",
+          "left_title": "New Releases",
+          "left__sub_title": "",
+          "left_titlecolor": "#000000",
+          "right_top_imageurl": "",
+          "right_top_title": "Deals",
+          "right_top_titlecolor": "#000000",
+          "right_bottom_imageurl": "",
+          "right_bottom_title": "Become Our Influencer",
+          "right_bottom_titlecolor": "#000000"
+        }
+      },
+      "1632974300e52c71d4": {
+        "type": "product-img-text-link",
+        "blocks": {
+          "6ee0332b-650d-45c5-894b-78136f985546": {
+            "type": "image",
+            "settings": {
+              "title": "Meball",
+              "text": "The lightest percussive massager on the market. Meball is a massage ball that fits into the palm of your hand. Perfect for travel, take it everywhere. Targets your tightest areas with precision to help you move better wherever you roam.",
+              "btn": "More",
+              "link": "shopify:\/\/products\/meball"
+            }
+          },
+          "ae577a56-5c25-4108-a1dc-32e03cfb4f7a": {
+            "type": "image",
+            "settings": {
+              "title": "Meroller",
+              "text": "Warm up fast, recover right, and unlock your tightest muscles, anywhere and anytime. Perfectly placed contours and four speeds of vibration give you a pinpointed roll that’s right for you.",
+              "btn": "More",
+              "link": "shopify:\/\/products\/meroller"
+            }
+          }
+        },
+        "block_order": [
+          "6ee0332b-650d-45c5-894b-78136f985546",
+          "ae577a56-5c25-4108-a1dc-32e03cfb4f7a"
+        ],
+        "settings": {}
+      },
+      "163299019055ea12e1": {
+        "type": "video_cover",
+        "settings": {
+          "code": "ZTURViZ4-To",
+          "text": "<h3>Empowered Sports &amp; Fitness<\/h3>\n<p>Meball and Meroller helps you recover after a muscle injury and release muscle aches with the easy and efficient way. Relexing anywhere and anytime! <\/p>"
+        }
+      },
+      "16336569847ffe452e": {
+        "type": "background-text",
+        "blocks": {
+          "35e993d1-097a-4d18-9423-855592909663": {
+            "type": "image",
+            "settings": {
+              "title": "Ultra Quite Brushless Motor Technology",
+              "text": "Made from high-density, easy-to-clean silicone that grips the skin for enhanced myofascial release.",
+              "btn": "Shop Now",
+              "link": "shopify:\/\/products\/meball",
+              "content_x_position": 75
+            }
+          }
+        },
+        "block_order": [
+          "35e993d1-097a-4d18-9423-855592909663"
+        ],
+        "settings": {
+          "margin_top": 0
+        }
+      },
+      "1633661260cd699904": {
+        "type": "full-featured-row",
+        "settings": {
+          "background_color": "#333333",
+          "text_color": "#ffffff",
+          "margin_top": 0,
+          "layout": "right",
+          "title": "ULTRA QUIET BRUSHLESS MOTORTECHNOLOGY",
+          "text": "<p>The lightest percussive massager on the market.The lightest percussive massager on the market.<\/p>",
+          "button_label": "Shop Now",
+          "button_link": "shopify:\/\/products\/meroller"
+        }
+      },
+      "1633663430f2c9b94d": {
+        "type": "testimonials",
+        "blocks": {
+          "1633663430f2c9b94d-0": {
+            "type": "testimonials",
+            "settings": {
+              "testimonial": "<p>Prime your body and get ready to move. The new and improved Vyper line takes the traditional rolling experience to a new level with three speeds of powerful vibration to help you get warm and stay loose. <\/p>",
+              "author": "-Amy.L, US"
+            }
+          },
+          "1633663430f2c9b94d-1": {
+            "type": "testimonials",
+            "settings": {
+              "testimonial": "<p>Prime your body and get ready to move. The new and improved Vyper line takes the traditional rolling experience to a new level with three speeds of powerful vibration to help you get warm and stay loose test two. <\/p>",
+              "author": "-Amy.L, CA"
+            }
+          }
+        },
+        "block_order": [
+          "1633663430f2c9b94d-0",
+          "1633663430f2c9b94d-1"
+        ],
+        "settings": {
+          "margin_top": 0,
+          "title": "",
+          "color_text": "#ffffff"
+        }
+      },
+      "1633747727b8948d69": {
+        "type": "share-bar",
+        "blocks": {
+          "1633747727b8948d69-1": {
+            "type": "item",
+            "settings": {
+              "author": "Unbox Therapy",
+              "testimonial": "<p>“ Introducing our most powerful solar panel to date. The Ranger 300 Briefcase gives you more capacity to collect solar power for high-use energy consumption. ”<\/p>"
+            }
+          },
+          "1633747727b8948d69-0": {
+            "type": "item",
+            "settings": {
+              "author": "Unbox Therapy",
+              "testimonial": "<p>“ Our most powerful solar panel to date. The Ranger 300 Briefcase gives you more capacity to collect solar. ”<\/p>"
+            }
+          },
+          "3932d77f-e11e-4779-87ce-efd484b8e6c9": {
+            "type": "item",
+            "settings": {
+              "author": "Unbox Therapy",
+              "testimonial": "<p>“ in this case it made the rest of my vacation loads of fun and even let us look up nearby stuff to do.”<\/p>"
+            }
+          },
+          "c3395365-f1cf-4c60-859b-2af7ca34d8de": {
+            "type": "item",
+            "settings": {
+              "author": "Unbox Therapy",
+              "testimonial": "<p>“ Thankdally, there are<br\/>lots of portable power supplies that can keep our gear running. ”<\/p>"
+            }
+          },
+          "2da56f9d-a989-4317-bcbd-d077607839bb": {
+            "type": "item",
+            "settings": {
+              "author": "Unbox Therapy",
+              "testimonial": "<p>“ We neverfully apprecite electricity untl we no longer have it ..like when we go camping or there's an unexpected poweroutage.  “<\/p>"
+            }
+          },
+          "e1906190-25fa-4d63-8378-63a7ee4e2115": {
+            "type": "item",
+            "settings": {
+              "author": "Author name Test",
+              "testimonial": "<p>Test Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>"
+            }
+          },
+          "ea46e4cf-1d8e-4d86-841b-ca99b8767c74": {
+            "type": "item",
+            "settings": {
+              "author": "Name Test Two",
+              "testimonial": "<p>Test Two Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1633747727b8948d69-1",
+          "1633747727b8948d69-0",
+          "3932d77f-e11e-4779-87ce-efd484b8e6c9",
+          "c3395365-f1cf-4c60-859b-2af7ca34d8de",
+          "2da56f9d-a989-4317-bcbd-d077607839bb",
+          "e1906190-25fa-4d63-8378-63a7ee4e2115",
+          "ea46e4cf-1d8e-4d86-841b-ca99b8767c74"
+        ],
+        "settings": {
+          "margin_top": 60,
+          "title": "America's No.1 Fast Charging Brand",
+          "color_background": "#f4f4f4",
+          "color_text": "#1c1d1d"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_image": true,
+          "collection_sort_enable": true,
+          "collection_tags_enable": false,
+          "collection_products_grid": "grid",
+          "product_vendor_enable": false,
+          "image": "shopify:\/\/shop_images\/Rectangle_175_1.png",
+          "image_mb": "shopify:\/\/shop_images\/Rectangle_174_2.png"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "blocks": {
+          "2b8ad369-c435-47d8-a2d9-5314abd911b6": {
+            "type": "image",
+            "settings": {
+              "title": "news",
+              "image": "shopify:\/\/shop_images\/Rectangle_124.png",
+              "image_mb": "shopify:\/\/shop_images\/Rectangle_136.png"
+            }
+          }
+        },
+        "block_order": [
+          "2b8ad369-c435-47d8-a2d9-5314abd911b6"
+        ],
+        "settings": {
+          "blog_show_tag_filter": true
+        }
+      },
+      "contact-section": {
+        "type": "contact-section",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/me-contact-pc.png",
+          "image_mb": "shopify:\/\/shop_images\/me-contact-mb.png",
+          "header-text": "<p>Whatever you need, we’re here to help.<br\/>Just get in touch, and we’ll try our best to respond within 24 hours.<\/p>",
+          "website_title": "Official Website:",
+          "website_name": "www.mepowerus.com",
+          "email_title": "Business Inquiry:",
+          "contact_email": "brand@mepowerus.com",
+          "email_title2": "Order Question:",
+          "contact_email2": "support@mepowerus.com",
+          "email_title3": "",
+          "contact_email3": "brand@mepowerus.com",
+          "phone_title": "Free Call:",
+          "contact_phone": "+86 13760872986",
+          "media": "Social Media:",
+          "media_name": "@mepowerus",
+          "address": "Address:",
+          "address_name": "Room 319, 3rd Floor, Building C2, Zhonghao Industrial City, Xiangjiaotang Community, Bantian Street, Longgang District, Shenzhen，China"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical"
+        }
+      }
+    },
+    "content_for_index": [
+      "slideshow",
+      "1632304018190956d9",
+      "1632974300e52c71d4",
+      "163299019055ea12e1",
+      "1632971132416c80ca",
+      "16336569847ffe452e",
+      "1633661260cd699904",
+      "1633663430f2c9b94d",
+      "1633747727b8948d69",
+      "16319284020bf80404"
+    ]
+  },
+  "presets": {
+    "Classic": {
+      "checkout_accent_color": "#a26b25",
+      "checkout_button_color": "#000000",
+      "checkout_error_color": "e32c2b",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_announcement": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "slide",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "slide",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-content": {
+          "type": "featured-content",
+          "settings": {
+            "section_title": "",
+            "text_size": "large"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-3": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-4": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2",
+            "featured-collections-3",
+            "featured-collections-4"
+          ],
+          "settings": {}
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "collection_products_grid": "grid"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {}
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-content",
+        "featured-collections",
+        "featured-products",
+        "featured-product",
+        "newsletter"
+      ]
+    },
+    "Playful": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#565656",
+      "color_borders": "#5dd2b4",
+      "color_button_text": "#ffffff",
+      "color_primary": "#7737BD",
+      "color_secondary": "#058677",
+      "color_product_background": "#fff4f6",
+      "color_sale_tag": "#e80970",
+      "color_input": "#f6f6f6",
+      "color_newsletter": "#bde9f2",
+      "color_drawer_background": "#360f5f",
+      "color_drawer_text": "#ffffff",
+      "color_drawer_border": "#50297a",
+      "color_drawer_button": "#7737BD",
+      "color_drawer_button_text": "#ffffff",
+      "color_headings": "#321863",
+      "type_header_family": "quicksand_n7",
+      "type_header_base_size": "38px",
+      "type_header_border_thickness": "1px",
+      "type_accent_family": "roboto_n7",
+      "type_accent_transform": true,
+      "type_accent_spacing": true,
+      "type_accent_subheadings": false,
+      "type_base_family": "helvetica_n4",
+      "type_base_size": "17px",
+      "type_base_italize_titles": false,
+      "cart_type": "drawer",
+      "cart_notes_enable": true,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_snapchat_link": "",
+      "social_google_plus_link": "",
+      "social_tumblr_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "social_fancy_link": "",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fff4f6",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Roboto",
+      "checkout_accent_color": "#7737BD",
+      "checkout_button_color": "#7737BD",
+      "checkout_error_color": "#f01130",
+      "checkout_banner_background_color": "#fff",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "collection_products_grid": "collage",
+      "customer_layout": "customer_area",
+      "favicon_enable": false,
+      "product_vendor_enable": false,
+      "social_sharing_style": "clean",
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "1495823280244": {
+              "type": "slide",
+              "settings": {
+                "slide_text_color": "#ffffff",
+                "slide_button_label_color": "#003B34",
+                "slide_button_background_color": "#84D1B2"
+              }
+            }
+          },
+          "block_order": [
+            "1495823280244"
+          ],
+          "settings": {
+            "hero_home_auto": false,
+            "home_hero_auto_speed": 5
+          }
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "home_featured_products": "frontpage",
+            "collection_products_grid": "collage"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_max_width": 260,
+            "search": "modal",
+            "main_menu_link_list": "main-menu",
+            "show_announcement": false,
+            "color_bg": "#290c49",
+            "color_text": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_link_list": "footer"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "collection_tags_enable": false,
+            "collection_products_grid": "grid",
+            "product_vendor_enable": false
+          }
+        },
+        "1494860348200": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "right"
+          }
+        },
+        "1494894035034": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "left"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "product_vendor_enable": false,
+            "social_sharing_products": true,
+            "enable_image_zoom": false,
+            "enable_video_looping": false
+          }
+        },
+        "1496078102297": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496078102297-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"text-align:center;\">\n<h1 class=\"h1\">Use HTML to format your text so it can be easily read.<\/h1>This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496078102297-0"
+          ],
+          "settings": {}
+        },
+        "1496177901425": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496177901425-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"width:745px;text-align: center; margin: 0 auto;\">This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496177901425-0"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "1496177901425",
+        "featured-products",
+        "newsletter",
+        "1496078102297",
+        "1494860348200",
+        "1494894035034"
+      ]
+    }
+  }
+}

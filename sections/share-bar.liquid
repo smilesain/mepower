@@ -1,0 +1,219 @@
+{%- style -%}
+  .share-section {
+    background: {{ section.settings.color_background }};
+    color: {{ section.settings.color_text }};
+  }
+}
+{%- endstyle -%}
+
+<div class="share-section">
+  {%- if section.settings.title != blank -%}
+    <div class="page-width">
+      <div class="section-header text-center">
+        <h2>{{ section.settings.title | escape }}</h2>
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+  <div id="share-wrapper">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {%- for block in section.blocks -%}
+        <div class="swiper-slide">
+
+            {%- if block.settings.image != blank or block.settings.author != blank -%}
+            <div class="share-meta">
+              {%- if block.settings.image != blank -%}
+              <img class="lazyload share-img"  data-src="{{ block.settings.image |img_url: 'master' }}" alt="{{ block.settings.image.alt }}"/>
+              {%- endif -%}
+
+              <div class="share-author-box">
+                {%- if block.settings.image_icon != blank -%}
+                <img class="lazyload"  data-src="{{ block.settings.image_icon |img_url: 'master' }}" alt="{{ block.settings.image_icon.alt }}"/>
+                {%- endif -%}
+
+                {%- if block.settings.author != blank -%}
+                <span>{{ block.settings.author | escape }}</span>
+                {%- endif -%}
+              </div>
+              
+              {%- if block.settings.testimonial != blank -%}
+              <div class="rte-setting text-spacing">
+                {{ block.settings.testimonial }}
+              </div>
+              {%- endif -%}
+              
+            </div>
+            {%- endif -%}
+
+        </div>
+        {%- endfor -%}
+      </div>
+
+      <div class="swiper-button-prev featured-swiper-button-prev share-button-prev">{%- render 'svg_html',svg_icon: 'arrow-left' -%}</div>
+      <div class="swiper-button-next featured-swiper-button-next share-button-next">{%- render 'svg_html',svg_icon: 'arrow-right' -%}</div>
+
+    </div>
+    </div>
+  {%- endif -%}
+</div>
+
+<style>
+  .no-margin-share{ margin-top:0 !important;}
+  .no-margin-share .share-section{padding:{{section.settings.margin_top | append:'px'}} 0; }
+  .share-section .share-meta{ background:#fff; min-height: 385px; text-align: center;  margin-bottom: 15px;}
+  .share-section .rte-setting{font-size: 14px;padding: 10px;}
+  .share-author-box{ display: flex; justify-content: center; align-items: center;}
+  .share-author-box span{ margin-left:10px; font-size:16px; font-weight:600;}
+  .share-img{ width:100%;}
+  .share-meta:hover{box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.25);}
+  #share-wrapper .swiper-container:before,#share-wrapper .swiper-container:after { display:none; }
+  #share-wrapper:hover .swiper-container:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8%;
+    height: 96%;
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  #share-wrapper:hover .swiper-container:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 7%;
+    height: 96%;
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  @media (min-width:769px ){
+    .share-button-prev,.share-button-next{ display:none;}
+    #share-wrapper:hover .share-button-prev,#share-wrapper:hover .share-button-next { display:block;}
+  }
+</style>
+
+<script> 
+  var shareSwiper = new Swiper('#share-wrapper .swiper-container',{
+    slidesPerView : 8,
+    spaceBetween : 20,
+    // initialSlide:2,
+    autoplay: {
+      delay: 6000,
+    },
+    loop: true,
+    observer:true,
+    observeParents:true,
+    centeredSlides : true,
+    watchOverflow: true,
+    navigation: {
+      nextEl: '.share-button-next',
+      prevEl: '.share-button-prev',
+    },
+    breakpoints: { 
+      1920: { slidesPerView : 6 },
+      1350: { slidesPerView : 5 },
+      768: { slidesPerView : 3},
+      590: { slidesPerView : 2 },
+      390: { slidesPerView : 1.3,spaceBetween : 80},
+    }
+  })
+
+  $(function(){
+    var maxheight = 0;
+    $("#share-wrapper .share-meta").each(function(){
+      if(maxheight < $(this).height()) 
+        maxheight = $(this).height();
+    });
+    $("#share-wrapper .share-meta").css({"height": maxheight + "px"});
+  });
+
+</script>
+
+{% schema %}
+  {
+    "name": "Share Bar",
+    "class": "no-margin-share",
+    "max_blocks": 10,
+    "settings": [
+  	  {
+        "type":"range",
+        "id":"margin_top",
+        "min":0,
+        "max":60,
+        "step":5,
+        "unit":"px",
+        "label":"margin top space",
+        "default":0
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "America's No.1 Fast Charging Brand"
+      },
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#1c1d1d"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "Size: 280px*200px"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_icon",
+            "label": "Author Icon",
+            "info": "Size: 42px*42px"
+          },
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author",
+            "default": "Author name"
+          },
+          {
+            "type": "richtext",
+            "id": "testimonial",
+            "label": "Text",
+            "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Share Bar",
+        "blocks": [
+          {
+            "type": "item"
+          },
+          {
+            "type": "item"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

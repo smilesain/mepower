@@ -1,0 +1,293 @@
+{
+  "sections": {
+    "product-template": {
+      "type": "product-template",
+      "settings": {
+        "product_vendor_enable": false,
+        "social_sharing_products": true,
+        "quantity_enabled": true,
+        "product_selector": "radio",
+        "enable_payment_button": true,
+        "add_to_cart_button_size": "small",
+        "media_layout": "thumbnails",
+        "enable_image_zoom": false,
+        "enable_video_looping": true
+      }
+    },
+    "163419297105e87078": {
+      "type": "product-video_cover",
+      "settings": {
+        "code": "cwCb-VhxDL8",
+        "image": "shopify:\/\/shop_images\/1637834373909.jpg",
+        "image_mb": "shopify:\/\/shop_images\/1637834373909.jpg",
+        "text": "Pinpointed, Ultra-portable Vibration Therapy"
+      }
+    },
+    "1634193265a867e831": {
+      "type": "product-background-text",
+      "disabled": true,
+      "blocks": {
+        "59b582c2-be97-4691-8823-2446106bd966": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_59_1.png",
+            "image_mb": "shopify:\/\/shop_images\/pro-mb_1.png",
+            "title": "Pinpointed, Ultra-portable Vibration Therapy",
+            "text": "",
+            "text_color": "#ffffff",
+            "btn": "Shop Now",
+            "link": "",
+            "content_x_position": 68,
+            "content_y_position": 42
+          }
+        }
+      },
+      "block_order": [
+        "59b582c2-be97-4691-8823-2446106bd966"
+      ],
+      "settings": {
+        "margin_top": 0
+      }
+    },
+    "1634193929be4ce5a4": {
+      "type": "product-featured-info",
+      "blocks": {
+        "3fc68af2-1704-4f00-bf64-5e0fa7d40d5b": {
+          "type": "image",
+          "settings": {
+            "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/icon-deep.svg?v=1633937996",
+            "title": "DEEP VIBRATIONS"
+          }
+        },
+        "ab8a6730-4ef1-4827-b2bc-40e5064c210d": {
+          "type": "image",
+          "settings": {
+            "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/icon-effort.svg?v=1633937996",
+            "title": "EFFORTLESS CONTROL"
+          }
+        },
+        "c840d4de-32b7-4808-8644-2fd7c009e14b": {
+          "type": "image",
+          "settings": {
+            "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/icon-long.svg?v=1633937996",
+            "title": "LONG LASTING CHARGE"
+          }
+        },
+        "d9c533c8-bb24-4dfa-8b43-0dddb4930a40": {
+          "type": "image",
+          "settings": {
+            "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/icon-easy.svg?v=1633937996",
+            "title": "EASY TO CARRY"
+          }
+        }
+      },
+      "block_order": [
+        "3fc68af2-1704-4f00-bf64-5e0fa7d40d5b",
+        "ab8a6730-4ef1-4827-b2bc-40e5064c210d",
+        "c840d4de-32b7-4808-8644-2fd7c009e14b",
+        "d9c533c8-bb24-4dfa-8b43-0dddb4930a40"
+      ],
+      "settings": {
+        "bg_color": "#000000",
+        "text_color": "#ffffff"
+      }
+    },
+    "1634193947ac564b0e": {
+      "type": "product-gallery-img",
+      "blocks": {
+        "f84589bf-d2fe-49f0-92d1-27e2071c7012": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pro-pc_3.png"
+          }
+        },
+        "8f6fb492-d0e3-4119-a3cb-b5f2830bdb61": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_63_9a0a13a3-16dd-41c3-91f8-0241d306c8cd.png"
+          }
+        },
+        "5c996a50-2f7e-42f7-b4b0-e75d524092e9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pro-pc_5.png"
+          }
+        },
+        "0cef94f6-a680-4cc5-a65e-615495de49ad": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pro-pc_6.png"
+          }
+        }
+      },
+      "block_order": [
+        "f84589bf-d2fe-49f0-92d1-27e2071c7012",
+        "8f6fb492-d0e3-4119-a3cb-b5f2830bdb61",
+        "5c996a50-2f7e-42f7-b4b0-e75d524092e9",
+        "0cef94f6-a680-4cc5-a65e-615495de49ad"
+      ],
+      "settings": {}
+    },
+    "1634194285a818c51e": {
+      "type": "product-text-icon-right",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pro-pc_7.png",
+        "image_mb": "shopify:\/\/shop_images\/pro-mb_2.png",
+        "title": "4 Vibration Levels",
+        "content": "Ideal for circulation improvement, and recovery of sore and tight muscles.",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "text_block_width": "29%",
+        "content_x_position": 60
+      }
+    },
+    "1634194602e9993e1c": {
+      "type": "product-text-icon-left",
+      "blocks": {
+        "626a6b1d-ac65-4233-a806-c5fdb40361bc": {
+          "type": "image",
+          "settings": {
+            "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/size.svg?v=1634022413",
+            "text": "52*34*36.5inch"
+          }
+        },
+        "eb589675-356e-4cc0-addc-cc2de3122ff5": {
+          "type": "image",
+          "settings": {
+            "image_svglink": "https:\/\/cdn.shopify.com\/s\/files\/1\/0585\/4897\/7826\/files\/weight.svg?v=1634022413",
+            "text": "1.5lb"
+          }
+        }
+      },
+      "block_order": [
+        "626a6b1d-ac65-4233-a806-c5fdb40361bc",
+        "eb589675-356e-4cc0-addc-cc2de3122ff5"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pro-pc_8.png",
+        "image_mb": "shopify:\/\/shop_images\/pro-mb_3.png",
+        "title": "Lightweight and Portable",
+        "content": "Compact Design, Easy to Carry",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "text_block_width": "50%",
+        "content_x_position": 20
+      }
+    },
+    "1634194776a55cf9e5": {
+      "type": "poduct-what-include",
+      "blocks": {
+        "7d75d916-4a36-4423-978d-dd195d90f45f": {
+          "type": "what-include",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pro-pc_1.png",
+            "name": "Meroller"
+          }
+        },
+        "e6d3a37f-4411-4e3c-a7f8-5e0d4630b697": {
+          "type": "what-include",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2.png",
+            "name": "USB-C Cable"
+          }
+        },
+        "9b15f044-1a3b-452a-93f4-fc9da6d01543": {
+          "type": "what-include",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_3.png",
+            "name": "User Manual"
+          }
+        }
+      },
+      "block_order": [
+        "7d75d916-4a36-4423-978d-dd195d90f45f",
+        "e6d3a37f-4411-4e3c-a7f8-5e0d4630b697",
+        "9b15f044-1a3b-452a-93f4-fc9da6d01543"
+      ],
+      "settings": {
+        "title": "What's Include"
+      }
+    },
+    "1634524306530fbd0e": {
+      "type": "mobile-section-divider",
+      "settings": {}
+    },
+    "1634195364d9f683fb": {
+      "type": "product-specification",
+      "settings": {
+        "title": "Specification",
+        "image": "shopify:\/\/shop_images\/2021-10-29_3.41.06.png",
+        "image_svglink": "",
+        "image_mb": "shopify:\/\/shop_images\/Group_176.png",
+        "image_mb_svglink": ""
+      }
+    },
+    "163419692832a9acd8": {
+      "type": "product-faq",
+      "blocks": {
+        "8f4fbdf7-98ad-4f2a-892b-bc58a3f02834": {
+          "type": "Faq",
+          "settings": {
+            "question": "1. How long is the warranty? ",
+            "answer": "Mepower offers one year warranty! If anything happens, please contact support@mepowerus.com directly and we'll help you out. Free call +18667770087."
+          }
+        },
+        "fc367790-0d5a-408f-9744-dc0de8deacb0": {
+          "type": "Faq",
+          "settings": {
+            "question": "2. Is the Merollor waterproof?",
+            "answer": "The design of the rhombus material on the surface makes it more resistant to dirt and not easily corroded by sweat. But it is not waterproof."
+          }
+        },
+        "0ec881c0-821b-4dc6-9c5e-1aa561c9151b": {
+          "type": "Faq",
+          "settings": {
+            "question": "3. Why don't you include a charger?",
+            "answer": "In the electronic age, people have all kinds of electronic devices. Too many data cables and plugs cause a lot of waste. Nowadays, many wall chargers are directly equipped with USB sockets, so we no longer add plugs to the package. Charging cable is consumables, we provide customers with an cable for use."
+          }
+        },
+        "091be30d-3fa2-4608-94fb-b5a2179dc52c": {
+          "type": "Faq",
+          "settings": {
+            "question": "4. How can I turn off Meball without going through level 4 intensity?",
+            "answer": "Hold on the power button for three seconds, it will shut down."
+          }
+        }
+      },
+      "block_order": [
+        "8f4fbdf7-98ad-4f2a-892b-bc58a3f02834",
+        "fc367790-0d5a-408f-9744-dc0de8deacb0",
+        "0ec881c0-821b-4dc6-9c5e-1aa561c9151b",
+        "091be30d-3fa2-4608-94fb-b5a2179dc52c"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
+    },
+    "163419710322fb30d4": {
+      "type": "product-reviews",
+      "settings": {}
+    },
+    "16345238732f817369": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true
+      }
+    }
+  },
+  "order": [
+    "product-template",
+    "163419297105e87078",
+    "1634193265a867e831",
+    "1634193929be4ce5a4",
+    "1634193947ac564b0e",
+    "1634194285a818c51e",
+    "1634194602e9993e1c",
+    "1634194776a55cf9e5",
+    "1634524306530fbd0e",
+    "1634195364d9f683fb",
+    "163419692832a9acd8",
+    "163419710322fb30d4",
+    "16345238732f817369"
+  ]
+}

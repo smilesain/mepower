@@ -1,0 +1,20 @@
+<!-- /snippets/search-bar2.liquid -->
+
+{% comment %}
+  Set the default button style if not defined
+{% endcomment %}
+{% unless search_btn_style %}
+  {% assign search_btn_style = 'btn--secondary' %}
+{% endunless %}
+
+<form action="{{ routes.search_url }}" method="get" class="input-group  search-bar-2 {{ search_bar_location }}" role="search">
+  {% comment %}<input type="hidden" name="type" value="product">{% endcomment %}
+  <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="Find headphones, blogs, services and more…" class="input-group-field" aria-label="{{ 'general.search.placeholder' | t }}">
+  <span class="input-group-btn">
+    <button type="submit" class="{{ search_btn_style }} icon-fallback-text">
+<!--       <span class="icon icon-search" aria-hidden="true"></span> -->
+      {%- render 'home-page-icon',home_page_svg_icon: 'search' -%}
+      <span class="fallback-text">{{ 'general.search.submit' | t }}</span>
+    </button>
+  </span>
+</form>

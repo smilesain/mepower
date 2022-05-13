@@ -1,0 +1,67 @@
+{%- assign grid_item_width = 'large--one-sixth medium--one-quarter small--one-half' -%}
+{%- assign max_height = 345 -%}
+{% for block in section.blocks %}
+
+{%- assign column_width = grid_item_width -%}
+
+<div  class="grid__item {{ column_width }}">
+  {%- assign featured_img_src = block.settings.featured_product -%}
+  <div class="grid-view-item js">
+    <div class="download-product-wrapper">
+      {% if block.settings.featured_product != blank %}
+      {%- assign img_url = block.settings.featured_product | img_url: 'master' -%}
+      {% else %}
+      {%- assign img_url = '' -%}
+      {% endif %}
+      <img class="lazyload" data-src="{{ img_url  }}"/>
+
+      {% if  block.settings.product-title != blank %}
+      <div class="grid-view-item__title"><p>{{ block.settings.product-title }}</p></div>
+      {% endif %}
+    </div>
+
+    <div class="download-notice">
+      <div class="download-box">
+        <div class="download-header"><div class="dclose-btn">X</div></div>
+        <div class="download-scroll">
+          <div>
+            <h4>Download List</h4>
+          </div>
+          <div class="download-main">
+            {% if  block.settings.manual_link01 != blank or block.settings.manual_link02 != blank or block.settings.manual_link03 != blank or block.settings.manual_link04 != blank %}
+            <div class="user-guide-box">
+              {% if block.settings.manual_link01 != blank %}
+              <span class="download">
+                {%- render 'svg_html',svg_icon: 'icon-download' -%}
+                <a class="{{ block.settings.manual_file_format01 }}" href="{{ block.settings.manual_link01 }}" target="_blank">{{ block.settings.manual-download01 }}</a>
+              </span>
+              {% endif %}
+              {% if block.settings.manual_link02 != blank %}
+              <span class="download">
+                 {%- render 'svg_html',svg_icon: 'icon-download' -%}
+                <a class="{{ block.settings.manual_file_format02 }}" href="{{ block.settings.manual_link02 }}" target="_blank">{{ block.settings.manual-download02 }}</a>
+              </span>
+              {% endif %}
+              {% if block.settings.manual_link03 != blank %}
+              <span class="download">
+                {%- render 'svg_html',svg_icon: 'icon-download' -%}
+                <a class="{{ block.settings.manual_file_format03 }}" href="{{ block.settings.manual_link03 }}" target="_blank">{{ block.settings.manual-download03 }}</a>
+              </span>
+              {% endif %}
+              {% if block.settings.manual_link04 != blank %}
+              <span class="download">
+                {%- render 'svg_html',svg_icon: 'icon-download' -%}
+                <a class="{{ block.settings.manual_file_format04 }}" href="{{ block.settings.manual_link04 }}" target="_blank">{{ block.settings.manual-download04 }}</a>
+              </span>
+              {% endif %} 
+            </div>
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endfor %}
