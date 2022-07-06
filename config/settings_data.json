@@ -297,7 +297,8 @@
           "611f29cd-d077-4a5e-8424-e8a888ef52a7",
           "9cbd303e-2eda-4e55-8b06-14c89646e456"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "1632971132416c80ca": {
         "type": "gallery_block",
@@ -342,7 +343,8 @@
           "6ee0332b-650d-45c5-894b-78136f985546",
           "ae577a56-5c25-4108-a1dc-32e03cfb4f7a"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "163299019055ea12e1": {
         "type": "video_cover",
@@ -541,6 +543,24 @@
           "display_type": "all",
           "sort": "alphabetical"
         }
+      },
+      "165709215000106909": {
+        "type": "advanced-content",
+        "blocks": {
+          "165709215000106909-0": {
+            "type": "html",
+            "settings": {
+              "code": "<!-- Start Stockist.co widget -->\n<div data-stockist-widget-tag=\"u12842\">Loading store locator\nfrom <a href=\"https:\/\/stockist.co\">Stockist store locator<\/a>...<\/div>\n<script>\n  (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;\n  k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);\n  })(document,'script','\/\/stockist.co\/embed\/v1\/widget.min.js');\n<\/script>\n<!-- End Stockist.co widget -->",
+              "width": "100%",
+              "alignment": "top-middle"
+            }
+          }
+        },
+        "block_order": [
+          "165709215000106909-0"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
@@ -553,7 +573,8 @@
       "1633661260cd699904",
       "1633663430f2c9b94d",
       "1633747727b8948d69",
-      "16319284020bf80404"
+      "16319284020bf80404",
+      "165709215000106909"
     ]
   },
   "presets": {
@@ -573,18 +594,21 @@
           "blocks": {
             "slideshow-0": {
               "type": "slide",
-              "settings": {}
+              "settings": {
+              }
             },
             "slideshow-1": {
               "type": "slide",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "slideshow-0",
             "slideshow-1"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "featured-content": {
           "type": "featured-content",
@@ -598,23 +622,28 @@
           "blocks": {
             "featured-collections-0": {
               "type": "collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "featured-collections-1": {
               "type": "collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "featured-collections-2": {
               "type": "collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "featured-collections-3": {
               "type": "collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "featured-collections-4": {
               "type": "collection",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -624,7 +653,8 @@
             "featured-collections-3",
             "featured-collections-4"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "featured-products": {
           "type": "featured-products",
@@ -634,11 +664,13 @@
         },
         "featured-product": {
           "type": "featured-product",
-          "settings": {}
+          "settings": {
+          }
         },
         "newsletter": {
           "type": "newsletter",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "content_for_index": [
@@ -745,7 +777,8 @@
         },
         "newsletter": {
           "type": "newsletter",
-          "settings": {}
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -808,7 +841,8 @@
           "block_order": [
             "1496078102297-0"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "1496177901425": {
           "type": "advanced-content",
@@ -825,7 +859,8 @@
           "block_order": [
             "1496177901425-0"
           ],
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "content_for_index": [
