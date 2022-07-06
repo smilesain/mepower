@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
 <head>
+{% include 'limespot' %}
   <meta name="facebook-domain-verification" content="y0oyp0i6qz1wtds2onel18dwd1o72p" />
   <meta name="google-site-verification" content="E_AWlcTgUl4wzufrIfv3SjLzpfuiyPjtKs4GL0l34sc" />
 
@@ -128,6 +129,7 @@
 
 
   
+  {% render 'judgeme_core' %}
 </head>
 
 {% comment %}
@@ -167,6 +169,7 @@
         <div class="wrapper">
       {% endunless %}
         {{ content_for_layout }}
+<limespot></limespot>
       {% unless request.page_type == "index" or request.page_type == "product" or page.template_suffix == "contact" or page.template_suffix == "user_manual" or template.name == "collection" %}
         </div>
       {% endunless %}
@@ -258,5 +261,8 @@
     });
   </script>
   
+{% include 'booster-discounts' %}
+ {% include 'smile-initializer' %}
+
 </body>
 </html>
